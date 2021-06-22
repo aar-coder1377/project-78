@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Project</title>
+</head>
+<body>
+    <h1> MY FAMILY BOOK</h1>
+    <img src="Family1.jpg" width="100" height="100" id="family_member_images" />
+    <h4 id="family_member_name"></h4>
+    <button onclick="update();"> NEXT </button>
+    
+        <script>
+            var pics = ["C:\Users\aarna_ltvcn0u\OneDrive\Desktop\Javascript Arrays\project 78\Family1.jpg" ,"bronsis.jpg", "momndad.jpg", "sisnPoppy.jpg"];
+            var names = ["FAMILY BOOK", "ME AND MY SISTER", "MY MOM AND DAD", "MY SISTER AND MY DOG", "MY FAMILY"];
+            var i = 0;
+            function update() {
+                i++;
+               
+                if (i =5) {
+                    i = 0;
+
+
+                }
+                var updatedimages = pic[i];
+                var updatednames = names[i];
+                document.getElementById(family_member_images).src = updatedimages;
+                document.getElementById(family_membeR_name).innerHTML = updatedimages;
+            }
+        </script>
+
+</body>
+</html>
